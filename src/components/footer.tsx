@@ -24,41 +24,41 @@ export default function FooterFooter() {
             {/* Quick Links */}
             <div className="space-y-4">
               <p className="text-[10px] uppercase tracking-widest text-[#C4A05A] font-bold">Studio</p>
-              <ul className="space-y-2 text-sm opacity-60">
-                <li><Link href="/" className="hover:text-[#C4A05A]">Home</Link></li>
-                <li><Link href="/projects" className="hover:text-[#C4A05A]">Portfolio</Link></li>
-                <li><Link href="/ourservices" className="hover:text-[#C4A05A]">Services</Link></li>
-                <li><Link href="/contact" className="hover:text-[#C4A05A]">Contact</Link></li>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/" className="hover:text-[#C4A05A] transition-colors">Home</Link></li>
+                <li><Link href="/projects" className="hover:text-[#C4A05A] transition-colors">Portfolio</Link></li>
+                <li><Link href="/ourservices" className="hover:text-[#C4A05A] transition-colors">Services</Link></li>
+                <li><Link href="/contact" className="hover:text-[#C4A05A] transition-colors">Contact</Link></li>
               </ul>
             </div>
 
             {/* Services Links */}
             <div className="space-y-4">
               <p className="text-[10px] uppercase tracking-widest text-[#C4A05A] font-bold">Services</p>
-              <ul className="space-y-2 text-sm opacity-60">
-                <li><Link href="/ourservices/interior-design" className="hover:text-[#C4A05A]">Interior Design</Link></li>
-                <li><Link href="/ourservices/architectural-design" className="hover:text-[#C4A05A]">Architecture</Link></li>
-                <li><Link href="/ourservices/mep-drawings" className="hover:text-[#C4A05A]">MEP Drawings</Link></li>
-                <li><Link href="/ourservices/approvals-and-authorities" className="hover:text-[#C4A05A]">Approvals</Link></li>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/ourservices/interior-design" className="hover:text-[#C4A05A] transition-colors">Interior Design</Link></li>
+                <li><Link href="/ourservices/architectural-design" className="hover:text-[#C4A05A] transition-colors">Architecture</Link></li>
+                <li><Link href="/ourservices/mep-drawings" className="hover:text-[#C4A05A] transition-colors">MEP Drawings</Link></li>
+                <li><Link href="/ourservices/approvals-and-authorities" className="hover:text-[#C4A05A] transition-colors">Approvals</Link></li>
               </ul>
             </div>
 
             {/* Connect Links */}
             <div className="space-y-4">
               <p className="text-[10px] uppercase tracking-widest text-[#C4A05A] font-bold">Connect</p>
-              <ul className="space-y-2 text-sm opacity-60">
+              <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <Link href="https://www.instagram.com/liminalarc.interiors?igsh=eXN1aW1ubDMybnow" target="_blank" className="hover:text-[#C4A05A]">
+                  <Link href="https://www.instagram.com/liminalarc.interiors?igsh=eXN1aW1ubDMybnow" target="_blank" className="hover:text-[#C4A05A] transition-colors">
                     Instagram
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/company/liminalarcinteriors/" target="_blank" className="hover:text-[#C4A05A]">
+                  <Link href="https://www.linkedin.com/company/liminalarcinteriors/" target="_blank" className="hover:text-[#C4A05A] transition-colors">
                     LinkedIn
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.facebook.com/profile.php?id=61573591764228" target="_blank" className="hover:text-[#C4A05A]">
+                  <Link href="https://www.facebook.com/profile.php?id=61573591764228" target="_blank" className="hover:text-[#C4A05A] transition-colors">
                     Facebook
                   </Link>
                 </li>
@@ -68,9 +68,9 @@ export default function FooterFooter() {
             {/* Legal */}
             <div className="space-y-4">
               <p className="text-[10px] uppercase tracking-widest text-[#C4A05A] font-bold">Legal</p>
-              <ul className="space-y-2 text-sm opacity-60">
-                <li><Link href="#" className="hover:text-[#C4A05A]">Privacy Policy</Link></li>
-                <li><Link href="#" className="hover:text-[#C4A05A]">Terms of Service</Link></li>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="#" className="hover:text-[#C4A05A] transition-colors">Privacy Policy</Link></li>
+                <li><Link href="#" className="hover:text-[#C4A05A] transition-colors">Terms of Service</Link></li>
               </ul>
             </div>
 
