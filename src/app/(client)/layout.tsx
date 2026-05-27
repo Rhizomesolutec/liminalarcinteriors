@@ -67,7 +67,7 @@ export default async function ClientLayout({
       <Navbar />
       <Cursor />
       <BackToTopButton />
-      <CallCpmponent data={data![0]} />
+      {/* <CallCpmponent data={data![0]} /> */}
       {children}
       <Footer />
     </>
