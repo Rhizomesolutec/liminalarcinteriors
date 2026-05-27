@@ -12,7 +12,7 @@ export default function Navbar() {
   const isPath = pathname === "/";
 
   const paths = [
-    { title: "Portfolio", href: "/projects" },
+    // { title: "Portfolio", href: "/projects" },
     { title: "Services", href: "/ourservices" },
     { title: "Inquiry", href: "/contact" },
   ];
