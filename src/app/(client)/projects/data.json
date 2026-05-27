@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "title": "DAMAC Luxury Residence",
+    "location": "Dubai, UAE",
+    "category": "Interior Design & Fit-Out Works",
+    "status": "Completed",
+    "duration": "6 months",
+    "budget": "$250K - $300K",
+    "area": "5,000 sq ft",
+    "rooms": "4 BR + 5 BA",
+    "year": "2024",
+    "mainImage": "/projects/damac-residence/main.jpg",
+    "gallery": [
+      "/projects/damac-residence/living-room.jpg",
+      "/projects/damac-residence/kitchen.jpg",
+      "/projects/damac-residence/bedroom.jpg"
+    ],
+    "description": "Liminal Arc is a UAE-based interior design company dedicated to transforming spaces into refined, functional experiences[cite: 3]. This residential project focuses on social media worthy visual impact and functional longevity [cite: 13], delivering a space that balances tradition and modernity[cite: 144].",
+    "features": [
+      "Turnkey solutions for prime residential sectors with elegance and a touch of class [cite: 126]",
+      "Smart automation solutions for homes [cite: 45]",
+      "Control lighting, climate, security, and entertainment easily [cite: 45]",
+      "Top-tier craftsmanship with premium materials and meticulous attention to detail [cite: 111, 112]"
+    ],
+    "materials": [
+      "Oak Wood",
+      "Venetian Plaster",
+      "Brushed Brass",
+      "Natural Stone"
+    ],
+    "testimonial": {
+      "quote": "They commit to managing every project with absolute transparency-from the initial structural planning to the final polishing of the smallest detail[cite: 14].",
+      "author": "DAMAC Properties",
+      "role": "Client Partner"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Provident Corporate Headquarters",
+    "location": "Dubai, UAE",
+    "category": "Commercial Fit-Out & Automation",
+    "status": "Completed",
+    "duration": "4 months",
+    "budget": "$150K - $200K",
+    "area": "4,200 sq ft",
+    "rooms": "Open Office + 3 Meeting Rooms",
+    "year": "2024",
+    "mainImage": "/projects/provident-office/reception.jpg",
+    "gallery": [
+      "/projects/provident-office/workspace.jpg",
+      "/projects/provident-office/lounge.jpg",
+      "/projects/provident-office/meeting-room.jpg"
+    ],
+    "description": "We specialize in crafting bespoke interiors that reflect individuality while embracing modern aesthetics and timeless appeal[cite: 8]. Our mission for this commercial space was to bridge the gap between creative imagination and technical execution[cite: 11].",
+    "features": [
+      "Complete interior solutions including furniture, joinery, and fit-outs for commercial spaces [cite: 47]",
+      "End-to-end facility services managed by experienced professionals for smooth operations [cite: 53]",
+      "Integration of smart-home technologies to create spaces that are as intelligent as they are beautiful [cite: 17]"
+    ],
+    "materials": [
+      "Acoustic Paneling",
+      "Glass Partitions",
+      "Engineered Wood",
+      "Concrete Finish"
+    ],
+    "testimonial": {
+      "quote": "Through efficient project management, we ensure all milestones are met without compromising quality[cite: 115, 116].",
+      "author": "Provident Management",
+      "role": "Corporate Client"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Pullman Hotel Lounge Renovation",
+    "location": "Downtown Dubai, UAE",
+    "category": "Luxury Hospitality",
+    "status": "Completed",
+    "duration": "5 months",
+    "budget": "$350K - $400K",
+    "area": "6,500 sq ft",
+    "rooms": "Main Lounge + VIP Areas",
+    "year": "2025",
+    "mainImage": "/projects/pullman-lounge/main-view.jpg",
+    "gallery": [
+      "/projects/pullman-lounge/bar-area.jpg",
+      "/projects/pullman-lounge/seating.jpg",
+      "/projects/pullman-lounge/lighting-details.jpg"
+    ],
+    "description": "A tailored interior solution using premium materials and advanced techniques[cite: 142]. This hospitality project translates complex client aspirations into seamless, high-performance interiors [cite: 14], setting a new global benchmark in the interior landscape where architecture and emotion converge[cite: 18].",
+    "features": [
+      "Turnkey interior fit-out solutions, innovative interior design, custom joinery, and shop fittings [cite: 102]",
+      "Industry-standard approvals and compliance with relevant regulatory authorities [cite: 56]",
+      "Eco-friendly materials championing environmental responsibility [cite: 149]"
+    ],
+    "materials": [
+      "Velvet Upholstery",
+      "Custom Italian Marble",
+      "Tinted Glass",
+      "Ambient LED Lighting"
+    ],
+    "testimonial": {
+      "quote": "The team focuses on creating safe, functional, and beautiful spaces that prioritize the well-being of clients and teams[cite: 108, 109].",
+      "author": "Pullman Operations",
+      "role": "Hospitality Partner"
+    }
+  }
+]

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interior Design &amp; Fit-Out | LIMINAL ARC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#e8c178",
+                    "tertiary": "#cac6be",
+                    "surface-bright": "#393939",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary": "#c8c6c5",
+                    "outline": "#8e9192",
+                    "primary-container": "#1a1a1a",
+                    "surface-container": "#1f2020",
+                    "surface-variant": "#353535",
+                    "on-background": "#e4e2e1",
+                    "tertiary-fixed-dim": "#cac6be",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary": "#e8c178",
+                    "on-error-container": "#ffdad6",
+                    "surface-dim": "#131313",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#494741",
+                    "on-error": "#690005",
+                    "surface-container-highest": "#353535",
+                    "surface": "#131313",
+                    "outline-variant": "#444748",
+                    "on-secondary-container": "#d9b36b",
+                    "on-tertiary-fixed": "#1d1c17",
+                    "error": "#ffb4ab",
+                    "tertiary-container": "#1b1a15",
+                    "inverse-primary": "#5f5e5e",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-secondary-fixed-variant": "#5c4202",
+                    "surface-tint": "#c8c6c5",
+                    "on-tertiary": "#32302b",
+                    "on-primary": "#313030",
+                    "secondary-container": "#5f4504",
+                    "on-surface": "#e4e2e1",
+                    "primary-fixed": "#e5e2e1",
+                    "on-surface-variant": "#c4c7c7",
+                    "secondary-fixed": "#ffdea4",
+                    "inverse-surface": "#e4e2e1",
+                    "inverse-on-surface": "#303030",
+                    "surface-container-low": "#1b1c1c",
+                    "on-primary-container": "#848282",
+                    "tertiary-fixed": "#e7e2da",
+                    "on-secondary": "#412d00",
+                    "on-primary-fixed": "#1c1b1b",
+                    "background": "#131313",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-secondary-fixed": "#261900",
+                    "on-tertiary-container": "#85827c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin": "64px",
+                    "unit": "4px",
+                    "gutter": "32px",
+                    "container-max": "1440px"
+            },
+            "fontFamily": {
+                    "body-sm": ["Manrope"],
+                    "display-xl": ["Epilogue"],
+                    "headline-md": ["Epilogue"],
+                    "label-caps": ["Manrope"],
+                    "headline-lg": ["Epilogue"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "display-xl": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "300"}],
+                    "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "300"}],
+                    "body-md": ["14px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e4e2e1;
+            overflow-x: hidden;
+        }
+        .gold-stroke { border: 1px solid #e8c178; }
+        .gold-line { background-color: #e8c178; width: 1px; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-clip {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        ::selection {
+            background-color: #e8c178;
+            color: #131313;
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #131313;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e8c178;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-secondary selection:text-surface">
+<!-- Header / TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin h-20 bg-surface/95 backdrop-blur-md border-b border-secondary/20">
+<div class="font-headline-md text-headline-md tracking-tighter text-secondary">LIMINAL ARC</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-on-surface/60 font-label-caps tracking-widest hover:text-secondary transition-colors duration-300" href="#">STUDIO</a>
+<a class="text-secondary border-b border-secondary pb-1 font-label-caps tracking-widest" href="#">SERVICES</a>
+<a class="text-on-surface/60 font-label-caps tracking-widest hover:text-secondary transition-colors duration-300" href="#">PORTFOLIO</a>
+<a class="text-on-surface/60 font-label-caps tracking-widest hover:text-secondary transition-colors duration-300" href="#">JOURNAL</a>
+<a class="text-on-surface/60 font-label-caps tracking-widest hover:text-secondary transition-colors duration-300" href="#">CONTACT</a>
+</div>
+<button class="bg-primary px-6 py-3 font-label-caps text-on-primary hover:opacity-80 transition-opacity">
+            BOOK CONSULTATION
+        </button>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-start overflow-hidden hero-clip">
+<img alt="Corporate executive suite" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] brightness-50" src="https://lh3.googleusercontent.com/aida/ADBb0ujA3-pb82eQaJSsla5aZUiCvNkYE8N1FfZLt1W_S0PE3YsFOXtYkIY9GyGLeFpj3AUn6k4WICuPrZFybwWSv-aawyOkA2orzz-RlnEY3hZGh80emttZX4MJm53dvfhY7uMuMr6p6Xf0v63zgUfnCcTE9bbmUzFGdoOA-JTB3a83RHc73L1alBu34hCjK1hKHvHrtSX2aJZkVMlBCTA85x82rCyfHpl0V_uRnEcCD_I5E6hZbz0w7pGDqgA"/>
+<div class="relative z-10 px-margin max-w-4xl pt-20">
+<div class="h-px w-24 bg-secondary mb-8"></div>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6 uppercase">Interior Design &amp; Fit-Out</h1>
+<p class="font-headline-md text-headline-md text-secondary/80 max-w-2xl leading-tight">
+                Transforming abstract concepts into tangible architectural masterpieces.
+            </p>
+</div>
+<!-- Decorative vertical line -->
+<div class="absolute right-margin bottom-0 h-64 w-px bg-secondary/30"></div>
+</section>
+<!-- Service Overview -->
+<section class="py-32 px-margin max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-8">Bespoke Mastery</h2>
+<div class="gold-line h-32 mb-8 hidden md:block"></div>
+</div>
+<div class="md:col-span-7 space-y-8">
+<p class="font-headline-md text-headline-md text-on-surface leading-relaxed">
+                At LIMINAL ARC, we perceive space not as a void, but as a canvas for high-performance art. Our approach to luxury residential and commercial fit-outs is rooted in the fluidity of parametric design and the precision of architectural engineering.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="w-2 h-2 bg-secondary flex-shrink-0"></span>
+<h4 class="font-label-caps text-label-caps text-secondary">CURATED MATERIALS</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface/70">Sourcing the rarest marbles, hand-finished metals, and sustainably harvested woods to define your environment's tactile soul.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="w-2 h-2 bg-secondary flex-shrink-0"></span>
+<h4 class="font-label-caps text-label-caps text-secondary">FLUID GEOMETRY</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface/70">Leveraging computational design to create seamless, organic transitions between structural elements and bespoke furniture.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Process -->
+<section class="bg-surface-container-low py-32 px-margin overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-label-caps text-label-caps text-secondary mb-16 tracking-[0.3em]">THE ARCHITECTURAL ODYSSEY</h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-secondary/20">
+<!-- Phase I -->
+<div class="pt-12 pb-20 lg:pr-12 group border-b lg:border-b-0 lg:border-r border-secondary/20">
+<span class="font-display-xl text-headline-lg text-on-surface/10 block mb-8 transition-colors group-hover:text-secondary/20">01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 uppercase">Spatial Alchemy</h3>
+<p class="font-body-md text-body-md text-on-surface/60 mb-8 h-24">Discovery and conceptualization where we distill your vision into a cohesive architectural language. We explore the tension between function and aesthetic form.</p>
+<div class="flex items-center gap-2 text-secondary font-label-caps text-label-caps group-hover:gap-4 transition-all duration-300">
+                        EXPLORE CONCEPT <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Phase II -->
+<div class="pt-12 pb-20 lg:px-12 group border-b lg:border-b-0 lg:border-r border-secondary/20">
+<span class="font-display-xl text-headline-lg text-on-surface/10 block mb-8 transition-colors group-hover:text-secondary/20">02</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 uppercase">Precision Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface/60 mb-8 h-24">Technical development and design iteration. Every joint, seam, and lighting fixture is engineered with mathematical rigor for absolute structural integrity.</p>
+<div class="flex items-center gap-2 text-secondary font-label-caps text-label-caps group-hover:gap-4 transition-all duration-300">
+                        VIEW BLUEPRINTS <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Phase III -->
+<div class="pt-12 pb-20 lg:pl-12 group">
+<span class="font-display-xl text-headline-lg text-on-surface/10 block mb-8 transition-colors group-hover:text-secondary/20">03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 uppercase">Masterful Execution</h3>
+<p class="font-body-md text-body-md text-on-surface/60 mb-8 h-24">Bespoke craftsmanship and turnkey delivery. Our site teams execute the design with uncompromising attention to detail, ensuring a flawless final transition.</p>
+<div class="flex items-center gap-2 text-secondary font-label-caps text-label-caps group-hover:gap-4 transition-all duration-300">
+                        FINAL DELIVERY <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Masterpieces -->
+<section class="py-32 px-margin max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-4">Related Masterpieces</h2>
+<div class="h-1 w-20 bg-secondary"></div>
+</div>
+<a class="font-label-caps text-label-caps text-secondary tracking-widest hover:opacity-70 transition-opacity" href="#">VIEW ALL PORTFOLIO</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Showcase 1 -->
+<div class="group relative overflow-hidden aspect-[16/10]">
+<img alt="Luxury interior showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uj46wKR6fj6zA3SVnvBDcphZJtqW1rWM_tGmWNT4NwmgucoVCCg5QTRbfvtHjyGoKFd6WNIQ7P5jzSFL62ydyNhA02FDBCwczBueU1MpGOSfLm9dXCOVrOHNnc_6C7Gbg07wLEykBfvYPAli8Kz-EthsM6E_krsHmNRQcncXCToUJdHo6bum9SdFsvfnEYALSHa1WWecFEnRZlfdRztLytUxxKlmjqp3M5EHjHHPdRCLBGl8XQUDah8WEA"/>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
+<p class="font-label-caps text-label-caps text-secondary mb-2">HOSPITALITY</p>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">The Obsidian Lounge</h4>
+<div class="h-px w-0 group-hover:w-full bg-secondary mt-4 transition-all duration-500"></div>
+</div>
+</div>
+<!-- Showcase 2 -->
+<div class="group relative overflow-hidden aspect-[16/10]">
+<img alt="Corporate lobby showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujFigsfIZa6u5oyfOKd6pksAmdQYjbol_UQHcNf7RZWmrYJAWL7-YPvSnpxfnksjhmZWwhg1IGQVcGCGvJcXMsv_Q4QrcvAsRnqwLIjOtZOk1PHfkWblaoJOmMzHGzJoJ4db0beVwchvd93LIV_b2SjGJFE-f2YRHW-01b5dA_VSd8d-E1ih26y57n4uR3M9HBm_U-KGG7M8rFQHJgWFFlKmVnDRiKc5C44fo19NkJSt43xPrsN8DmSTw"/>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
+<p class="font-label-caps text-label-caps text-secondary mb-2">CORPORATE</p>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase">Ethereal Headquarters</h4>
+<div class="h-px w-0 group-hover:w-full bg-secondary mt-4 transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry Section: Begin Your Narrative -->
+<section class="py-32 px-margin bg-surface-container-lowest relative overflow-hidden">
+<!-- Background Texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#e8c178 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+<div class="max-w-4xl mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-display-xl text-headline-lg text-on-surface uppercase mb-4">Begin Your Narrative</h2>
+<p class="font-body-md text-body-md text-on-surface/60">Allow our designers to craft your next masterpiece. Share your vision below.</p>
+</div>
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-2 group">
+<label class="font-label-caps text-label-caps text-secondary/60 transition-colors group-focus-within:text-secondary uppercase">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-secondary/30 focus:ring-0 focus:border-secondary py-3 text-on-surface placeholder:text-on-surface/20 font-body-md" placeholder="Enter your name" type="text"/>
+</div>
+<div class="space-y-2 group">
+<label class="font-label-caps text-label-caps text-secondary/60 transition-colors group-focus-within:text-secondary uppercase">Service Interest</label>
+<select class="w-full bg-transparent border-0 border-b border-secondary/30 focus:ring-0 focus:border-secondary py-3 text-on-surface font-body-md appearance-none">
+<option class="bg-surface text-on-surface">INTERIOR DESIGN &amp; FIT-OUT</option>
+<option class="bg-surface text-on-surface">ARCHITECTURAL CONSULTING</option>
+<option class="bg-surface text-on-surface">BESPOKE FURNITURE</option>
+</select>
+</div>
+</div>
+<div class="space-y-2 group">
+<label class="font-label-caps text-label-caps text-secondary/60 transition-colors group-focus-within:text-secondary uppercase">Project Brief</label>
+<textarea class="w-full bg-transparent border-0 border-b border-secondary/30 focus:ring-0 focus:border-secondary py-3 text-on-surface placeholder:text-on-surface/20 font-body-md resize-none" placeholder="Briefly describe your space and objectives" rows="4"></textarea>
+</div>
+<div class="flex justify-center pt-8">
+<button class="gold-stroke px-12 py-4 text-secondary font-label-caps tracking-widest hover:bg-secondary hover:text-surface transition-all duration-500" type="submit">
+                        INITIATE CONSULTATION
+                    </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-gutter px-margin flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest border-t border-secondary/10">
+<div class="font-headline-md text-headline-md text-on-surface">LIMINAL ARC</div>
+<div class="flex flex-col items-center md:items-start gap-4">
+<p class="font-body-sm text-body-sm text-on-surface/40 uppercase">© 2024 LIMINAL ARC INTERIORS. ARCHITECTURAL EXCELLENCE IN DUBAI.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface/40 hover:text-secondary transition-all" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-on-surface/40 hover:text-secondary transition-all" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-on-surface/40 hover:text-secondary transition-all" href="#">PRIVACY POLICY</a>
+<a class="font-label-caps text-label-caps text-on-surface/40 hover:text-secondary transition-all" href="#">TERMS OF SERVICE</a>
+</div>
+</footer>
+<script>
+        // Atmospheric effects: Scroll reveal for section headers
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Instant reveal for hero
+        const hero = document.querySelector('section');
+        hero.classList.remove('opacity-0', 'translate-y-10');
+        hero.classList.add('opacity-100');
+    </script>
+</body></html>
