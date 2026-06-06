@@ -104,7 +104,7 @@ export function DrawerNav() {
               <div className="h-px w-full bg-[#e8c178]/40" />
 
               {/* Header row: brand + close */}
-              <div className="flex items-center justify-between px-10 py-7 border-b border-[#e8c178]/10">
+              <div className="flex items-center justify-between px-10 py-7 border-b border-[#e8c178]/10 bg-[#131313]!">
                 <span
                   className="font-[Epilogue] font-light text-[22px] tracking-tight text-[#e8c178]"
                 >
@@ -138,7 +138,7 @@ export function DrawerNav() {
               </div>
 
               {/* Nav links */}
-              <nav className="flex-1 flex flex-col justify-center px-10">
+              <nav className="flex-1 flex flex-col justify-center px-10 bg-[#131313]">
                 <ul className="flex flex-col gap-1">
                   {navLinks.map(({ name, href }, index) => (
                     <motion.li
@@ -187,7 +187,7 @@ export function DrawerNav() {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.4 }}
-                className="px-10 py-8 border-t border-[#e8c178]/10 flex items-center justify-between"
+                className="px-10 py-8 border-t border-[#e8c178]/10 flex items-center justify-between bg-[#131313]!"
               >
                 {/* Social links */}
                 <div className="flex items-center gap-3">
