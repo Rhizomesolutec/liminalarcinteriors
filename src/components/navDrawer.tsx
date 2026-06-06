@@ -12,94 +12,117 @@ export function DrawerNav() {
     setIsOpen(false);
   };
 
-  // Prevent body scroll when menu is open
   React.useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
-    
-    // Cleanup on unmount
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isOpen]);
 
+  const navLinks = [
+    { name: "Home",     href: "/" },
+    { name: "Services", href: "/ourservices" },
+    { name: "Projects", href: "/projects" },
+    { name: "About",    href: "/#about" },
+    { name: "Contact",  href: "/contact" },
+  ];
+
+  const socialLinks = [
+    {
+      url: "https://www.facebook.com/profile.php?id=61573591764228",
+      icon: "/icons8-facebook-48.svg",
+      alt: "Facebook",
+    },
+    {
+      url: "https://www.instagram.com/liminalarc.interiors?igsh=eXN1aW1ubDMybnow",
+      icon: "/icons8-instagram-logo.svg",
+      alt: "Instagram",
+    },
+    {
+      url: "https://www.linkedin.com/company/liminalarcinteriors/",
+      icon: "/icons8-linkedin-logo.svg",
+      alt: "LinkedIn",
+    },
+  ];
+
   return (
     <>
-      {/* Menu Trigger Button */}
+      {/* ── Hamburger Trigger ─────────────────────────────────────── */}
       <motion.button
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
         onClick={() => setIsOpen(true)}
         aria-label="Open navigation menu"
-        className="relative z-50"
+        className="relative z-50 flex flex-col justify-center gap-[5px] p-2 group"
       >
-        <svg
-          className="block size-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          aria-hidden="true"
-          data-slot="icon"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        {/* Three gold lines — replaces the generic SVG hamburger */}
+        {[0, 1, 2].map((i) => (
+          <motion.span
+            key={i}
+            className="block h-px bg-[#e8c178] origin-left"
+            style={{ width: i === 1 ? 20 : 14 }}
+            whileHover={{ width: 20 }}
+            transition={{ duration: 0.2 }}
           />
-        </svg>
+        ))}
       </motion.button>
 
-      {/* Full Screen Overlay */}
+      {/* ── Full-Screen Overlay ──────────────────────────────────── */}
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Backdrop */}
+            {/* Dim backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              transition={{ duration: 0.25 }}
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
               onClick={() => setIsOpen(false)}
             />
-            
-            {/* Menu Content */}
+
+            {/* Drawer panel */}
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ 
-                type: "spring", 
-                stiffness: 300, 
-                damping: 30,
-                duration: 0.3
-              }}
-              className="fixed top-0 right-0 bottom-0 w-full bg-[#1a1a1a] z-50 flex flex-col"
+              transition={{ type: "spring", stiffness: 280, damping: 28 }}
+              className="fixed top-0 right-0 bottom-0 w-full md:w-[480px] z-50 flex flex-col"
               style={{
-                // iOS specific fixes
-                WebkitOverflowScrolling: 'touch',
-                overscrollBehavior: 'none'
+                backgroundColor: "#131313",
+                borderLeft: "1px solid rgba(232,193,120,0.15)",
+                WebkitOverflowScrolling: "touch",
+                overscrollBehavior: "none",
               }}
             >
-              {/* Header with Close Button */}
-              <div className="flex justify-end p-4">
+              {/* Gold top accent line */}
+              <div className="h-px w-full bg-[#e8c178]/40" />
+
+              {/* Header row: brand + close */}
+              <div className="flex items-center justify-between px-10 py-7 border-b border-[#e8c178]/10">
+                <span
+                  className="font-[Epilogue] font-light text-[22px] tracking-tight text-[#e8c178]"
+                >
+                  LIMINAL ARC
+                </span>
+
                 <motion.button
-                  initial={{ x: 20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.1, duration: 0.3 }}
-                  whileHover={{ scale: 1.1, rotate: 90 }}
-                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, rotate: -90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  transition={{ delay: 0.15, duration: 0.3 }}
+                  whileHover={{ rotate: 90 }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={() => setIsOpen(false)}
-                  className="p-2 text-white hover:text-[#D4AF37] rounded-full transition-colors"
                   aria-label="Close navigation menu"
+                  className="w-10 h-10 border border-[#e8c178]/30 flex items-center justify-center text-[#e8c178] hover:border-[#e8c178] hover:bg-[#e8c178]/5 transition-all duration-300"
                 >
                   <svg
-                    className="size-10"
+                    className="w-4 h-4"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
@@ -114,104 +137,91 @@ export function DrawerNav() {
                 </motion.button>
               </div>
 
-              {/* Navigation Menu */}
-              <nav className="flex-1 flex items-center justify-center px-6">
-                <ul className="flex w-full flex-col gap-8 items-center text-center">
-                  {[
-                    { name: "Home", href: "/" },
-                    { name: "Services", href: "/ourservices" },
-                    // { name: "Blogs", href: "/#blogs" },
-                    { name: "Projects", href: "/projects" },
-                    { name: "About", href: "/#about" },
-                    { name: "Contact", href: "/contact" },
-                  ].map(({ name, href }, index) => (
+              {/* Nav links */}
+              <nav className="flex-1 flex flex-col justify-center px-10">
+                <ul className="flex flex-col gap-1">
+                  {navLinks.map(({ name, href }, index) => (
                     <motion.li
                       key={name}
-                      initial={{ y: 50, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
+                      initial={{ x: 40, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
                       transition={{
-                        delay: 0.2 + index * 0.1,
-                        duration: 0.5,
+                        delay: 0.15 + index * 0.08,
+                        duration: 0.45,
                         type: "spring",
-                        stiffness: 100,
+                        stiffness: 120,
                       }}
+                      className="border-b border-[#e8c178]/10 last:border-b-0"
                     >
                       <Link
                         href={href}
-                        className="block text-2xl font-medium text-[#FFFFF0] uppercase tracking-wider hover:text-[#D4AF37] transition-colors py-2 relative"
                         onClick={handleLinkClick}
+                        className="group flex items-center justify-between py-5 text-[#e4e2e1]/50 hover:text-[#e8c178] transition-colors duration-300"
                       >
-                        <motion.span
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="block"
-                        >
+                        {/* Index label */}
+                        <span className="font-[Manrope] text-[10px] font-semibold tracking-[0.2em] text-[#e8c178]/30 group-hover:text-[#e8c178]/60 transition-colors w-8">
+                          0{index + 1}
+                        </span>
+
+                        {/* Link name */}
+                        <span className="flex-1 font-[Epilogue] font-light text-[36px] leading-none tracking-[-0.01em] uppercase group-hover:text-[#e8c178] transition-colors duration-300">
                           {name}
+                        </span>
+
+                        {/* Arrow indicator */}
+                        <motion.span
+                          className="text-[#e8c178]/0 group-hover:text-[#e8c178] font-[Manrope] text-[11px] tracking-[0.15em]"
+                          whileHover={{ x: 4 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          →
                         </motion.span>
-                        <motion.div
-                          className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#7F6456]"
-                          whileHover={{
-                            width: "100%",
-                            x: "-50%",
-                            transition: { duration: 0.3 },
-                          }}
-                        />
                       </Link>
                     </motion.li>
                   ))}
-                  
-                  {/* Social Media Icons */}
-                  <motion.div 
-                    className="flex justify-between items-center gap-4 mt-8"
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{
-                      delay: 0.8,
-                      duration: 0.5,
-                      type: "spring",
-                      stiffness: 100,
-                    }}
-                  >
-                    {[
-                      {
-                        url: "https://www.facebook.com/profile.php?id=61573591764228",
-                        icon: "/icons8-facebook-48.svg",
-                        alt: "Facebook"
-                      },
-                      {
-                        url: "https://www.instagram.com/liminalarc.interiors?igsh=eXN1aW1ubDMybnow",
-                        icon: "/icons8-instagram-logo.svg",
-                        alt: "Instagram"
-                      },
-                      {
-                        url: "https://www.linkedin.com/company/liminalarcinteriors/",
-                        icon: "/icons8-linkedin-logo.svg",
-                        alt: "LinkedIn"
-                      },
-                    ].map((item, index) => (
-                      <Link
-                        key={`social-link-${index}`}
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <motion.div
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="p-2"
-                        >
-                          <Image
-                            src={item.icon}
-                            alt={item.alt}
-                            width={30}
-                            height={30}
-                          />
-                        </motion.div>
-                      </Link>
-                    ))}
-                  </motion.div>
                 </ul>
               </nav>
+
+              {/* Footer: socials + label */}
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.4 }}
+                className="px-10 py-8 border-t border-[#e8c178]/10 flex items-center justify-between"
+              >
+                {/* Social links */}
+                <div className="flex items-center gap-3">
+                  {socialLinks.map((item, index) => (
+                    <Link
+                      key={`social-${index}`}
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="w-9 h-9 border border-[#e8c178]/20 flex items-center justify-center hover:border-[#e8c178]/60 hover:bg-[#e8c178]/5 transition-all duration-300"
+                      >
+                        <Image
+                          src={item.icon}
+                          alt={item.alt}
+                          width={16}
+                          height={16}
+                        />
+                      </motion.div>
+                    </Link>
+                  ))}
+                </div>
+
+                {/* Right label */}
+                <span className="font-[Manrope] text-[10px] font-semibold tracking-[0.2em] uppercase text-[#e4e2e1]/20">
+                  Follow Us
+                </span>
+              </motion.div>
+
+              {/* Gold bottom accent line */}
+              <div className="h-px w-full bg-[#e8c178]/40" />
             </motion.div>
           </>
         )}
