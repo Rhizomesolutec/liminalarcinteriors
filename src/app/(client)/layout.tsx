@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "Liminal Arc",
     images: [
       {
-        url: "/favicon.png",
+        url: "https://www.liminalarcinteriors.com/favicon.png",
         width: 1200,
         height: 630,
         alt: "Liminal Arc Office Fit-Out Project in Dubai",
